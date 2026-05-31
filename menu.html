@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu – Spice Delight</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <a href="front.html" class="logo">
+      <span class="logo-icon">🌶</span>
+      <span class="logo-text">Spice <em>Delight</em></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="front.html">Home</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="specialdish.html">Specials</a></li>
+      <li><a href="order.html">Place Order</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="menu.html" title="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+      <a href="order.html" title="Cart"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <p class="section-eyebrow">Explore & Order</p>
+    <h1 class="section-title">Our Menu</h1>
+    <p class="page-subtitle">Handcrafted with love — every dish tells a story.</p>
+  </div>
+
+  <!-- SEARCH -->
+  <div class="menu-search-wrap">
+    <div class="menu-search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" id="searchInput" placeholder="Search dishes…">
+    </div>
+  </div>
+
+  <!-- CATEGORY TABS -->
+  <div class="category-tabs">
+    <button class="tab active" data-cat="all">All</button>
+    <button class="tab" data-cat="main">Main Dishes</button>
+    <button class="tab" data-cat="beverages">Beverages</button>
+    <button class="tab" data-cat="desserts">Desserts</button>
+  </div>
+
+  <!-- MENU GRID -->
+  <section class="menu-section" id="menuGrid">
+
+    <!-- MAIN DISHES -->
+    <div class="category-header" data-cat="main">
+      <h2>Main Dishes</h2>
+    </div>
+    <div class="menu-grid" id="mainGrid">
+
+      <div class="dish-card" data-cat="main" data-name="veg biryani">
+        <div class="dish-emoji">🍚</div>
+        <div class="dish-info">
+          <div class="dish-top">
+            <h3>Veg Biryani</h3>
+            <span class="tag veg">Veg</span>
+          </div>
+          <p class="dish-desc">Fragrant basmati rice cooked with mixed vegetables and whole spices.</p>
+          <div class="dish-footer">
+            <span class="price">Rs. 200</span>
+            <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dish-card" data-cat="main" data-name="masala dosa">
+        <div class="dish-emoji">🥞</div>
+        <div class="dish-info">
+          <div class="dish-top">
+            <h3>Masala Dosa</h3>
+            <span class="tag veg">Veg</span>
+          </div>
+          <p class="dish-desc">Crispy fermented crepe with spiced potato filling, chutney and sambar.</p>
+          <div class="dish-footer">
+            <span class="price">Rs. 80</span>
+            <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dish-card" data-cat="main" data-name="kadhai paneer">
+        <div class="dish-emoji">🧀</div>
+        <div class="dish-info">
+          <div class="dish-top">
+            <h3>Kadhai Paneer</h3>
+            <span class="tag veg">Veg</span>
+          </div>
+          <p class="dish-desc">Cottage cheese tossed with bell peppers in a bold kadhai masala sauce.</p>
+          <div class="dish-footer">
+            <span class="price">Rs. 350</span>
+            <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dish-card" data-cat="main" data-name="dum aloo">
+        <div class="dish-emoji">🥔</div>
+        <div class="dish-info">
+          <div class="dish-top">
+            <h3>Dum Aloo</h3>
+            <span class="tag veg">Veg</span>
+          </div>
+          <p class="dish-desc">Baby potatoes slow-cooked in a rich, aromatic spiced yogurt gravy.</p>
+          <div class="dish-footer">
+            <span class="price">Rs. 150</span>
+            <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dish-card" data-cat="main" data-name="dal makhni">
+        <div class="dish-emoji">🫘</div>
+        <div class="dish-info">
+          <div class="dish-top">
+            <h3>Dal Makhni</h3>
+            <span class="tag veg">Veg</span>
+          </div>
+          <p class="dish-desc">Black lentils slow-simmered overnight with butter and cream.</p>
+          <div class="dish-footer">
+            <span class="price">Rs. 250</span>
+            <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dish-card" data-cat="main" data-name="papdi chaat">
+        <div class="dish-emoji">🥗</div>
+        <div class="dish-info">
+          <div class="dish-top">
+            <h3>Papdi Chaat</h3>
+            <span class="tag veg">Veg</span>
+          </div>
+          <p class="dish-desc">Crunchy wafers topped with chutneys, yogurt, sev and chaat masala.</p>
+          <div class="dish-footer">
+            <span class="price">Rs. 50</span>
+            <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dish-card" data-cat="main" data-name="seekh kabab">
+        <div class="dish-emoji">🍢</div>
+        <div class="dish-info">
+          <div class="dish-top">
+            <h3>Seekh Kabab</h3>
+            <span class="tag nonveg">Non-Veg</span>
+          </div>
+          <p class="dish-desc">Minced meat skewers seasoned with herbs, grilled in a tandoor.</p>
+          <div class="dish-footer">
+            <span class="price">Rs. 250</span>
+            <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dish-card" data-cat="main" data-name="butter naan">
+        <div class="dish-emoji">🫓</div>
+        <div class="dish-info">
+          <div class="dish-top">
+            <h3>Butter Naan</h3>
+            <span class="tag veg">Veg</span>
+          </div>
+          <p class="dish-desc">Soft leavened flatbread baked in a clay tandoor, finished with butter.</p>
+          <div class="dish-footer">
+            <span class="price">Rs. 20</span>
+            <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dish-card" data-cat="main" data-name="butter chicken">
+        <div class="dish-emoji">🍗</div>
+        <div class="dish-info">
+          <div class="dish-top">
+            <h3>Butter Chicken</h3>
+            <span class="tag nonveg">Non-Veg</span>
+          </div>
+          <p class="dish-desc">Tender chicken in a rich, creamy tomato-based sauce with aromatic spices.</p>
+          <div class="dish-footer">
+            <span class="price">Rs. 200</span>
+            <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dish-card" data-cat="main" data-name="chicken tikka">
+        <div class="dish-emoji">🍖</div>
+        <div class="dish-info">
+          <div class="dish-top">
+            <h3>Chicken Tikka</h3>
+            <span class="tag nonveg">Non-Veg</span>
+          </div>
+          <p class="dish-desc">Marinated chicken pieces char-grilled with smoky tandoor flavour.</p>
+          <div class="dish-footer">
+            <span class="price">Rs. 240</span>
+            <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dish-card" data-cat="main" data-name="chicken biryani">
+        <div class="dish-emoji">🍛</div>
+        <div class="dish-info">
+          <div class="dish-top">
+            <h3>Chicken Biryani</h3>
+            <span class="tag nonveg">Non-Veg</span>
+          </div>
+          <p class="dish-desc">Slow-cooked basmati rice layered with spiced chicken, saffron and fried onions.</p>
+          <div class="dish-footer">
+            <span class="price">Rs. 400</span>
+            <a href="order.html" class="btn btn-primary btn-sm">Order</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /mainGrid -->
+
+    <!-- BEVERAGES -->
+    <div class="category-header" data-cat="beverages">
+      <h2>Beverages</h2>
+    </div>
+    <div class="menu-grid" id="bevGrid">
+
+      <div class="dish-card" data-cat="beverages" data-name="kadak chai">
+        <div class="dish-emoji">☕</div>
+        <div class="dish-info">
+          <div class="dish-top"><h3>Kadak Chai</h3><span class="tag veg">Veg</span></div>
+          <p class="dish-desc">Strong Indian spiced milk tea brewed to perfection.</p>
+          <div class="dish-footer"><span class="price">Rs. 50</span><a href="order.html" class="btn btn-primary btn-sm">Order</a></div>
+        </div>
+      </div>
+
+      <div class="dish-card" data-cat="beverages" data-name="wine">
+        <div class="dish-emoji">🍷</div>
+        <div class="dish-info">
+          <div class="dish-top"><h3>Wine</h3><span class="tag"></span></div>
+          <p class="dish-desc">Select red or white from our curated wine collection.</p>
+          <div class="dish-footer"><span class="price">Rs. 1000</span><a href="order.html" class="btn btn-primary btn-sm">Order</a></div>
+        </div>
+      </div>
+
+      <div class="dish-card" data-cat="beverages" data-name="lemonade">
+        <div class="dish-emoji">🍋</div>
+        <div class="dish-info">
+          <div class="dish-top"><h3>Lemonade</h3><span class="tag veg">Veg</span></div>
+          <p class="dish-desc">Fresh-squeezed lemonade with a hint of mint and black salt.</p>
+          <div class="dish-footer"><span class="price">Rs. 200</span><a href="order.html" class="btn btn-primary btn-sm">Order</a></div>
+        </div>
+      </div>
+
+      <div class="dish-card" data-cat="beverages" data-name="iced coffee">
+        <div class="dish-emoji">🧋</div>
+        <div class="dish-info">
+          <div class="dish-top"><h3>Iced Coffee</h3><span class="tag veg">Veg</span></div>
+          <p class="dish-desc">Cold brew coffee over ice, lightly sweetened with cream.</p>
+          <div class="dish-footer"><span class="price">Rs. 250</span><a href="order.html" class="btn btn-primary btn-sm">Order</a></div>
+        </div>
+      </div>
+
+      <div class="dish-card" data-cat="beverages" data-name="fruit beer">
+        <div class="dish-emoji">🍺</div>
+        <div class="dish-info">
+          <div class="dish-top"><h3>Fruit Beer</h3><span class="tag"></span></div>
+          <p class="dish-desc">Light, refreshing beer infused with tropical fruit flavors.</p>
+          <div class="dish-footer"><span class="price">Rs. 200</span><a href="order.html" class="btn btn-primary btn-sm">Order</a></div>
+        </div>
+      </div>
+
+      <div class="dish-card" data-cat="beverages" data-name="fruit cocktail">
+        <div class="dish-emoji">🍹</div>
+        <div class="dish-info">
+          <div class="dish-top"><h3>Fruit Cocktail</h3><span class="tag"></span></div>
+          <p class="dish-desc">A vibrant mix of seasonal fruits with a splash of citrus.</p>
+          <div class="dish-footer"><span class="price">Rs. 300</span><a href="order.html" class="btn btn-primary btn-sm">Order</a></div>
+        </div>
+      </div>
+
+      <div class="dish-card" data-cat="beverages" data-name="aam panna">
+        <div class="dish-emoji">🥭</div>
+        <div class="dish-info">
+          <div class="dish-top"><h3>Aam Panna</h3><span class="tag veg">Veg</span></div>
+          <p class="dish-desc">Classic raw mango cooler with cumin and black salt.</p>
+          <div class="dish-footer"><span class="price">Rs. 200</span><a href="order.html" class="btn btn-primary btn-sm">Order</a></div>
+        </div>
+      </div>
+
+      <div class="dish-card" data-cat="beverages" data-name="lassi">
+        <div class="dish-emoji">🥛</div>
+        <div class="dish-info">
+          <div class="dish-top"><h3>Lassi</h3><span class="tag veg">Veg</span></div>
+          <p class="dish-desc">Thick, chilled yogurt drink — sweet or salted, your choice.</p>
+          <div class="dish-footer"><span class="price">Rs. 100</span><a href="order.html" class="btn btn-primary btn-sm">Order</a></div>
+        </div>
+      </div>
+
+      <div class="dish-card" data-cat="beverages" data-name="falooda">
+        <div class="dish-emoji">🍦</div>
+        <div class="dish-info">
+          <div class="dish-top"><h3>Falooda</h3><span class="tag veg">Veg</span></div>
+          <p class="dish-desc">Rose-flavoured milk dessert drink with vermicelli and basil seeds.</p>
+          <div class="dish-footer"><span class="price">Rs. 150</span><a href="order.html" class="btn btn-primary btn-sm">Order</a></div>
+        </div>
+      </div>
+
+    </div><!-- /bevGrid -->
+
+    <!-- DESSERTS -->
+    <div class="category-header" data-cat="desserts">
+      <h2>Desserts</h2>
+    </div>
+    <div class="menu-grid" id="dessertGrid">
+
+      <div class="dish-card" data-cat="desserts" data-name="strawberry pudding">
+        <div class="dish-emoji">🍓</div>
+        <div class="dish-info">
+          <div class="dish-top"><h3>Strawberry Pudding</h3><span class="tag veg">Veg</span></div>
+          <p class="dish-desc">Creamy pudding layered with fresh strawberry coulis and cream.</p>
+          <div class="dish-footer"><span class="price">Rs. 150</span><a href="order.html" class="btn btn-primary btn-sm">Order</a></div>
+        </div>
+      </div>
+
+      <div class="dish-card" data-cat="desserts" data-name="caramel pudding">
+        <div class="dish-emoji">🍮</div>
+        <div class="dish-info">
+          <div class="dish-top"><h3>Caramel Pudding</h3><span class="tag veg">Veg</span></div>
+          <p class="dish-desc">Classic baked caramel custard with a golden caramel glaze.</p>
+          <div class="dish-footer"><span class="price">Rs. 170</span><a href="order.html" class="btn btn-primary btn-sm">Order</a></div>
+        </div>
+      </div>
+
+      <div class="dish-card" data-cat="desserts" data-name="strawberry pastry">
+        <div class="dish-emoji">🎂</div>
+        <div class="dish-info">
+          <div class="dish-top"><h3>Strawberry Pastry</h3><span class="tag veg">Veg</span></div>
+          <p class="dish-desc">Soft sponge layered with whipped cream and fresh strawberries.</p>
+          <div class="dish-footer"><span class="price">Rs. 150</span><a href="order.html" class="btn btn-primary btn-sm">Order</a></div>
+        </div>
+      </div>
+
+      <div class="dish-card" data-cat="desserts" data-name="donut">
+        <div class="dish-emoji">🍩</div>
+        <div class="dish-info">
+          <div class="dish-top"><h3>Donut</h3><span class="tag veg">Veg</span></div>
+          <p class="dish-desc">Fluffy glazed donuts with assorted toppings and fillings.</p>
+          <div class="dish-footer"><span class="price">Rs. 140</span><a href="order.html" class="btn btn-primary btn-sm">Order</a></div>
+        </div>
+      </div>
+
+      <div class="dish-card" data-cat="desserts" data-name="truffle">
+        <div class="dish-emoji">🍫</div>
+        <div class="dish-info">
+          <div class="dish-top"><h3>Truffle</h3><span class="tag veg">Veg</span></div>
+          <p class="dish-desc">Decadent dark chocolate truffle cake with ganache icing.</p>
+          <div class="dish-footer"><span class="price">Rs. 180</span><a href="order.html" class="btn btn-primary btn-sm">Order</a></div>
+        </div>
+      </div>
+
+      <div class="dish-card" data-cat="desserts" data-name="ice cream">
+        <div class="dish-emoji">🍨</div>
+        <div class="dish-info">
+          <div class="dish-top"><h3>Ice Cream</h3><span class="tag veg">Veg</span></div>
+          <p class="dish-desc">Three scoops of premium ice cream in your choice of flavours.</p>
+          <div class="dish-footer"><span class="price">Rs. 135</span><a href="order.html" class="btn btn-primary btn-sm">Order</a></div>
+        </div>
+      </div>
+
+      <div class="dish-card" data-cat="desserts" data-name="pancake">
+        <div class="dish-emoji">🥞</div>
+        <div class="dish-info">
+          <div class="dish-top"><h3>Pancake</h3><span class="tag veg">Veg</span></div>
+          <p class="dish-desc">Fluffy golden pancakes stacked with maple syrup and berries.</p>
+          <div class="dish-footer"><span class="price">Rs. 200</span><a href="order.html" class="btn btn-primary btn-sm">Order</a></div>
+        </div>
+      </div>
+
+    </div><!-- /dessertGrid -->
+
+    <!-- NO RESULTS -->
+    <div id="noResults" class="no-results" style="display:none;">
+      <p>🔍 No dishes found. Try a different search.</p>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-brand">
+      <span class="logo-icon">🌶</span>
+      <span class="logo-text">Spice <em>Delight</em></span>
+    </div>
+    <p class="footer-tagline">Authentic Indian Flavours · Mumbai · Since 2024</p>
+    <div class="footer-links">
+      <a href="front.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="specialdish.html">Specials</a>
+      <a href="order.html">Order</a>
+    </div>
+    <p class="footer-copy">© 2024 Spice Delight. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>

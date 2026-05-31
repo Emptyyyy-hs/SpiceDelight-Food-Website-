@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place Order – Spice Delight</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/order.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <a href="front.html" class="logo">
+      <span class="logo-icon">🌶</span>
+      <span class="logo-text">Spice <em>Delight</em></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="front.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="specialdish.html">Specials</a></li>
+      <li><a href="order.html" class="active">Place Order</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="menu.html" title="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+      <a href="order.html" title="Cart"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <p class="section-eyebrow">Fast & Easy</p>
+    <h1 class="section-title">Place Your <em>Order</em></h1>
+    <p class="page-subtitle">Fill in your details and we'll bring the flavours to you.</p>
+  </div>
+
+  <!-- ORDER LAYOUT -->
+  <section class="order-layout">
+
+    <!-- ORDER FORM -->
+    <div class="order-form-wrap">
+      <form class="order-form" id="orderForm" novalidate>
+
+        <div class="form-section-title">📋 Your Details</div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" placeholder="Rahul" required>
+            <span class="error-msg">Please enter your first name.</span>
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" placeholder="Sharma" required>
+            <span class="error-msg">Please enter your last name.</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="+91 98765 43210" required pattern="[0-9+\s]{10,14}">
+          <span class="error-msg">Please enter a valid phone number.</span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="rahul@example.com">
+        </div>
+
+        <div class="form-section-title">📍 Delivery Address</div>
+
+        <div class="form-group">
+          <label for="address">Street Address</label>
+          <input type="text" id="address" placeholder="Flat 4B, Orchid Tower" required>
+          <span class="error-msg">Please enter your address.</span>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" placeholder="Mumbai" required>
+            <span class="error-msg">Please enter your city.</span>
+          </div>
+          <div class="form-group">
+            <label for="pin">PIN Code</label>
+            <input type="text" id="pin" placeholder="400001" required pattern="[0-9]{6}">
+            <span class="error-msg">Please enter a valid 6-digit PIN.</span>
+          </div>
+        </div>
+
+        <div class="form-section-title">🍽️ Your Order</div>
+
+        <div class="order-items" id="orderItems">
+          <!-- dynamically added items appear here -->
+          <div class="order-item-row" id="defaultRow">
+            <select class="item-select" name="dish">
+              <option value="">— Select a dish —</option>
+              <optgroup label="Main Dishes">
+                <option value="Veg Biryani|200">Veg Biryani – Rs. 200</option>
+                <option value="Masala Dosa|80">Masala Dosa – Rs. 80</option>
+                <option value="Kadhai Paneer|350">Kadhai Paneer – Rs. 350</option>
+                <option value="Dum Aloo|150">Dum Aloo – Rs. 150</option>
+                <option value="Dal Makhni|250">Dal Makhni – Rs. 250</option>
+                <option value="Papdi Chaat|50">Papdi Chaat – Rs. 50</option>
+                <option value="Seekh Kabab|250">Seekh Kabab – Rs. 250</option>
+                <option value="Butter Naan|20">Butter Naan – Rs. 20</option>
+                <option value="Butter Chicken|200">Butter Chicken – Rs. 200</option>
+                <option value="Chicken Tikka|240">Chicken Tikka – Rs. 240</option>
+                <option value="Chicken Biryani|400">Chicken Biryani – Rs. 400</option>
+                <option value="Paneer Tikka|280">Paneer Tikka – Rs. 280</option>
+              </optgroup>
+              <optgroup label="Beverages">
+                <option value="Kadak Chai|50">Kadak Chai – Rs. 50</option>
+                <option value="Wine|1000">Wine – Rs. 1000</option>
+                <option value="Lemonade|200">Lemonade – Rs. 200</option>
+                <option value="Iced Coffee|250">Iced Coffee – Rs. 250</option>
+                <option value="Fruit Beer|200">Fruit Beer – Rs. 200</option>
+                <option value="Fruit Cocktail|300">Fruit Cocktail – Rs. 300</option>
+                <option value="Aam Panna|200">Aam Panna – Rs. 200</option>
+                <option value="Lassi|100">Lassi – Rs. 100</option>
+                <option value="Falooda|150">Falooda – Rs. 150</option>
+              </optgroup>
+              <optgroup label="Desserts">
+                <option value="Strawberry Pudding|150">Strawberry Pudding – Rs. 150</option>
+                <option value="Caramel Pudding|170">Caramel Pudding – Rs. 170</option>
+                <option value="Strawberry Pastry|150">Strawberry Pastry – Rs. 150</option>
+                <option value="Donut|140">Donut – Rs. 140</option>
+                <option value="Truffle|180">Truffle – Rs. 180</option>
+                <option value="Ice Cream|135">Ice Cream – Rs. 135</option>
+                <option value="Pancake|200">Pancake – Rs. 200</option>
+              </optgroup>
+            </select>
+            <div class="qty-ctrl">
+              <button type="button" class="qty-btn minus" onclick="changeQty(this,-1)">−</button>
+              <span class="qty-val">1</span>
+              <button type="button" class="qty-btn plus" onclick="changeQty(this,1)">+</button>
+            </div>
+            <button type="button" class="remove-item" onclick="removeItem(this)" title="Remove">✕</button>
+          </div>
+        </div>
+
+        <button type="button" class="btn-add-item" id="addItemBtn">
+          <i class="fa-solid fa-plus"></i> Add Another Item
+        </button>
+
+        <!-- ORDER TOTAL -->
+        <div class="order-total-bar">
+          <span>Estimated Total:</span>
+          <span class="total-amount" id="totalAmount">Rs. 0</span>
+        </div>
+
+        <div class="form-section-title">🗒️ Special Instructions</div>
+        <div class="form-group">
+          <textarea id="notes" rows="3" placeholder="Less spice, extra sauce, allergies, etc."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="payment">Payment Method</label>
+          <select id="payment">
+            <option value="cash">Cash on Delivery</option>
+            <option value="upi">UPI</option>
+            <option value="card">Credit / Debit Card</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-full">
+          <i class="fa-solid fa-paper-plane"></i>&nbsp; Confirm Order
+        </button>
+
+      </form>
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside class="order-aside">
+      <div class="aside-card">
+        <h3>🕐 Delivery Info</h3>
+        <ul class="aside-list">
+          <li><i class="fa-solid fa-clock"></i> 30–45 min estimated</li>
+          <li><i class="fa-solid fa-location-dot"></i> Mumbai & surroundings</li>
+          <li><i class="fa-solid fa-phone"></i> +91 98765 00001</li>
+          <li><i class="fa-solid fa-envelope"></i> orders@spicedelight.in</li>
+        </ul>
+      </div>
+      <div class="aside-card">
+        <h3>💳 We Accept</h3>
+        <div class="payment-icons">
+          <span>💵 Cash</span>
+          <span>📱 UPI</span>
+          <span>💳 Card</span>
+        </div>
+      </div>
+      <div class="aside-card aside-promo">
+        <p class="promo-emoji">🎉</p>
+        <h3>First Order?</h3>
+        <p>Use code <strong>SPICE10</strong> for 10% off your first order!</p>
+      </div>
+    </aside>
+
+  </section>
+
+  <!-- SUCCESS MODAL -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal">
+      <div class="modal-emoji">🎉</div>
+      <h2>Order Placed!</h2>
+      <p>Thank you! Your order has been received and is being prepared with love. You'll get a confirmation shortly.</p>
+      <a href="front.html" class="btn btn-primary">Back to Home</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-brand">
+      <span class="logo-icon">🌶</span>
+      <span class="logo-text">Spice <em>Delight</em></span>
+    </div>
+    <p class="footer-tagline">Authentic Indian Flavours · Mumbai · Since 2024</p>
+    <div class="footer-links">
+      <a href="front.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="specialdish.html">Specials</a>
+      <a href="order.html">Order</a>
+    </div>
+    <p class="footer-copy">© 2024 Spice Delight. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/order.js"></script>
+</body>
+</html>
