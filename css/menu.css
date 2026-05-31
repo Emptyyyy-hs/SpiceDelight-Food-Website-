@@ -1,0 +1,183 @@
+/* ===== MENU.CSS ===== */
+
+.page-header {
+  padding: 120px 8% 40px;
+  background: linear-gradient(135deg, var(--gold-pale) 0%, var(--white) 60%);
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+.page-subtitle {
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+/* SEARCH */
+.menu-search-wrap {
+  padding: 24px 8%;
+  background: var(--white);
+  display: flex;
+  justify-content: center;
+}
+.menu-search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  padding: 12px 20px;
+  width: 100%;
+  max-width: 480px;
+  transition: border-color var(--transition);
+}
+.menu-search:focus-within {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(232,160,32,0.1);
+}
+.menu-search i { color: var(--text-muted); }
+.menu-search input {
+  border: none;
+  background: none;
+  outline: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  color: var(--text);
+  width: 100%;
+}
+.menu-search input::placeholder { color: var(--text-muted); }
+
+/* TABS */
+.category-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 8% 32px;
+  flex-wrap: wrap;
+  background: var(--white);
+}
+.tab {
+  padding: 9px 22px;
+  border-radius: 50px;
+  border: 1px solid var(--border);
+  background: none;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.tab:hover { border-color: var(--gold); color: var(--gold); }
+.tab.active {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: white;
+}
+
+/* MENU SECTION */
+.menu-section {
+  padding: 0 8% 80px;
+  background: var(--surface);
+}
+
+/* CATEGORY HEADER */
+.category-header {
+  padding: 40px 0 20px;
+}
+.category-header h2 {
+  font-size: 1.6rem;
+  color: var(--dark);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.category-header h2::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+/* MENU GRID */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+/* DISH CARD */
+.dish-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition);
+}
+.dish-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+  border-color: var(--gold-light);
+}
+.dish-emoji {
+  font-size: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 20px 18px;
+  background: var(--gold-pale);
+  border-bottom: 1px solid var(--border);
+}
+.dish-info { padding: 18px; flex: 1; display: flex; flex-direction: column; gap: 8px; }
+.dish-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.dish-top h3 { font-size: 1rem; color: var(--dark); font-family: 'Playfair Display', serif; font-weight: 700; }
+.dish-desc { font-size: 0.82rem; color: var(--text-muted); line-height: 1.6; flex: 1; }
+.dish-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 8px; }
+.price { font-size: 1rem; font-weight: 600; color: var(--gold); font-family: 'Playfair Display', serif; }
+
+/* TAGS */
+.tag {
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 3px 8px;
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+.tag.veg { background: #e8f5e9; color: #2e7d32; border: 1px solid #a5d6a7; }
+.tag.nonveg { background: #fce4ec; color: #c62828; border: 1px solid #ef9a9a; }
+
+/* SMALL BUTTON */
+.btn-sm {
+  padding: 8px 18px;
+  font-size: 0.82rem;
+}
+
+/* HIDDEN */
+.dish-card.hidden,
+.category-header.hidden,
+.menu-grid.empty {
+  display: none;
+}
+
+/* NO RESULTS */
+.no-results {
+  text-align: center;
+  padding: 60px 0;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .page-header { padding: 100px 6% 32px; }
+  .menu-search-wrap { padding: 20px 6%; }
+  .category-tabs { padding: 0 6% 24px; }
+  .menu-section { padding: 0 6% 60px; }
+  .menu-grid { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+}
+@media (max-width: 480px) {
+  .menu-grid { grid-template-columns: 1fr; }
+}
