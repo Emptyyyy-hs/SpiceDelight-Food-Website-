@@ -7,7 +7,8 @@ A modern and responsive restaurant website built using **HTML, CSS, and JavaScri
 ## 📸 Project Preview
 
 ### 🏠 Home Page
-![Home Page](images/home-page.png)
+![Home Page]<img src="https://github.com/user-attachments/assets/59a89517-d457-42f0-9213-dda5f4d6cc56" />
+
 
 ### 🍽️ Menu Page
 ![Menu Page](images/menu-page.png)
