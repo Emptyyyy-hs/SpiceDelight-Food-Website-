@@ -8,22 +8,21 @@ A modern and responsive restaurant website built using **HTML, CSS, and JavaScri
 
 ### 🏠 Home Page
 <img src="https://github.com/user-attachments/assets/59a89517-d457-42f0-9213-dda5f4d6cc56" />
-<img src="https://github.com/user-attachments/assets/0f0115b4-1c22-45bb-a186-5e4e66e29345" width="45%" alt="Screenshot 1">
+<img src="https://github.com/user-attachments/assets/0f0115b4-1c22-45bb-a186-5e4e66e29345" />
 
 
 
 ### 🍽️ Menu Page
 <img src="https://github.com/user-attachments/assets/e876e390-3948-4f36-a08b-7ce28b226e06"/>
-<img src="https://github.com/user-attachments/assets/4fd2dbfe-fed4-4f2f-8816-a3ebc117f810" />
-<img src="https://github.com/user-attachments/assets/f0e2351f-f33e-4de8-8b23-91b1db636b74" />
-  
+<img src="https://github.com/user-attachments/assets/4fd2dbfe-fed4-4f2f-8816-a3ebc117f810" width="55%" alt="Screenshot 1"/>
+<img src="https://github.com/user-attachments/assets/f0e2351f-f33e-4de8-8b23-91b1db636b74" width="55%" alt="Screenshot 1"/>
+
+   
 ### ⭐ Special Dishes Page
-![Special Dishes](images/specials-page.png)
+
 
 ### 🛒 Order Page
-![Order Page](images/order-page.png)
 
-> Create an `images` folder in your repository and upload your screenshots there.
 
 ---
 
