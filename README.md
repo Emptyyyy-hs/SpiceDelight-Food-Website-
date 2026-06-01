@@ -14,8 +14,8 @@ A modern and responsive restaurant website built using **HTML, CSS, and JavaScri
 
 ### 🍽️ Menu Page
 <img src="https://github.com/user-attachments/assets/e876e390-3948-4f36-a08b-7ce28b226e06"/>
-<img src="https://github.com/user-attachments/assets/4fd2dbfe-fed4-4f2f-8816-a3ebc117f810" width="55%" alt="Screenshot 1"/>
-<img src="https://github.com/user-attachments/assets/f0e2351f-f33e-4de8-8b23-91b1db636b74" width="55%" alt="Screenshot 1"/>
+<img src="https://github.com/user-attachments/assets/4fd2dbfe-fed4-4f2f-8816-a3ebc117f810" width="50%" alt="Screenshot 1"/>
+<img src="https://github.com/user-attachments/assets/f0e2351f-f33e-4de8-8b23-91b1db636b74" width="50%" alt="Screenshot 1"/>
 
    
 ### ⭐ Special Dishes Page
