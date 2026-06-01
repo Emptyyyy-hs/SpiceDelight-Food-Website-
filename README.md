@@ -14,16 +14,18 @@ A modern and responsive restaurant website built using **HTML, CSS, and JavaScri
 
 ### 🍽️ Menu Page
 <img src="https://github.com/user-attachments/assets/e876e390-3948-4f36-a08b-7ce28b226e06"/>
-<img src="https://github.com/user-attachments/assets/4fd2dbfe-fed4-4f2f-8816-a3ebc117f810" width="50%" alt="Screenshot 1"/>
-<img src="https://github.com/user-attachments/assets/f0e2351f-f33e-4de8-8b23-91b1db636b74" width="50%" alt="Screenshot 1"/>
+<img src="https://github.com/user-attachments/assets/4fd2dbfe-fed4-4f2f-8816-a3ebc117f810" width="45%" alt="Screenshot 1"/>
+<img src="https://github.com/user-attachments/assets/f0e2351f-f33e-4de8-8b23-91b1db636b74" width="45%" alt="Screenshot 2"/>
 
    
 ### ⭐ Special Dishes Page
+<img src="https://github.com/user-attachments/assets/3d1b7998-c916-4a1c-b07c-73dfb677a2e9"  />
+<img src="https://github.com/user-attachments/assets/3c3361b7-1dc3-4b8e-b0bc-fb0164f54e82" width="45%" alt="Screenshot 2" />
+<img src="https://github.com/user-attachments/assets/d74c29b7-9f71-49da-8027-b9f970201417" width="45%" alt="Screenshot 3" />
 
 
 ### 🛒 Order Page
-
-
+<img rc="https://github.com/user-attachments/assets/d8b056b6-fe2f-4843-baa2-c7a8d6ae67b9" />
 ---
 
 ## 🚀 Features
