@@ -25,7 +25,7 @@ A modern and responsive restaurant website built using **HTML, CSS, and JavaScri
 
 
 ### 🛒 Order Page
-<img rc="https://github.com/user-attachments/assets/d8b056b6-fe2f-4843-baa2-c7a8d6ae67b9" />
+<img src="https://github.com/user-attachments/assets/d8b056b6-fe2f-4843-baa2-c7a8d6ae67b9" />
 ---
 
 ## 🚀 Features
